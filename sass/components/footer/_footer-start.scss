@@ -1,0 +1,26 @@
+.basment__addreses {
+  margin-right: 70px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $trans-gray;
+
+  transition: color $main-time $cubic;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+.address__item--color-white {
+  color: $white-color;
+}

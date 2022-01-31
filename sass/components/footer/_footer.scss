@@ -1,0 +1,20 @@
+.basment {
+  background: $next-bg;
+  width: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.basment__box {
+  display: flex;
+}
+/* Адресса подвала */
+
+.basment-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+/* Соц-сети подвала */

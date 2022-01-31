@@ -1,0 +1,65 @@
+.registration {
+  display: flex;
+  flex-direction: column;
+
+  &__box {
+    position: relative;
+  }
+}
+
+.registration__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 12px;
+  line-height: 1.16;
+  color: $second-text-color;
+  margin-bottom: 3px;
+}
+
+.registration__input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  outline: rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border $main-time $cubic;
+
+  &:focus {
+    border: 1px solid $brand-color;
+  }
+}
+
+.registration__icon {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  fill: $main-text-color;
+  transform: translateY(50%);
+  transition: fill $main-time $cubic;
+}
+
+.registration__box:focus-within > .registration__icon {
+  fill: $brand-color;
+}
+
+.registration__button {
+  @extend %flex-center;
+  @extend %Big-button;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: background-color $main-time $cubic;
+}
+.registration__button:hover,
+.registration__button:focus {
+  background-color: #188ce8;
+}

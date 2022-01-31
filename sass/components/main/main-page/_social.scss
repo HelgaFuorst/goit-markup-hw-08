@@ -1,0 +1,22 @@
+.social-media {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: normal;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-right: -10px;
+}
+.social-media__link {
+  @extend %flex-center;
+
+  @include social($icon-color);
+  transition: background-color $main-time $cubic, fill $main-time $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $white-color;
+    background-color: $brand-color;
+    animation: scalx 1000ms infinite alternate ease-in 500ms;
+  }
+}

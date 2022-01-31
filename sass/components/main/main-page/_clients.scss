@@ -1,0 +1,28 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: -30px;
+
+  &__item {
+    display: flex;
+    margin-left: 30px;
+  }
+}
+.clients__link {
+  @extend %flex-center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: $icon-color;
+
+  transition: border-color $main-time $cubic, fill $main-time $cubic;
+  &:hover,
+  &:focus {
+    fill: $brand-color;
+    border-color: $brand-color;
+  }
+}

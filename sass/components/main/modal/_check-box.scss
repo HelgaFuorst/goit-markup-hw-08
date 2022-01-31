@@ -1,0 +1,21 @@
+.commentaries__text {
+  resize: none;
+
+  padding-left: 15px;
+  padding-top: 15px;
+  min-width: 448px;
+  min-height: 120px;
+  margin-bottom: 20px;
+  outline: rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border $main-time $cubic;
+
+  &:focus {
+    border: 1px solid $brand-color;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
