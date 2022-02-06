@@ -1,0 +1,32 @@
+.logo {
+  @include sizeLOGOmobile();
+  color: $brand-color;
+
+  @media screen and (min-width: $min-tablet) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    @include sizeLOGO();
+    margin-right: 93px;
+  }
+}
+
+.logo__dark {
+  color: $brand-black-color;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  color: $brand-color;
+  @include sizeLOGOmobile();
+  cursor: default;
+
+  @media screen and (min-width: $min-desktop) {
+    @include sizeLOGO();
+  }
+}
+
+.footer-logo__white {
+  color: $white-color;
+}

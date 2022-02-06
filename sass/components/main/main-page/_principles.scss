@@ -1,23 +1,48 @@
 /*Основные принципы*/
 .principles {
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;}
+  &__item {
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+    height: 226px;
+    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 .principles__icon {
-  @extend %flex-center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  text-align: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 /* Второй заголовок */
 .principles__name {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -25,9 +50,11 @@
 }
 /* Описание принципов */
 .principles__description {
-  width: 270px;
+  display: block;
+  width: 450px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $second-text-color;
+  align-content: center;
 }

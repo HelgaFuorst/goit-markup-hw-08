@@ -1,10 +1,10 @@
 .banner {
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: #c4c4c4;
   background-image: linear-gradient(
@@ -15,16 +15,31 @@
     url(../images/bcgImg.jpg);
   background-position: center;
   background-size: cover;
+
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    width: 1600px;
+  }
 }
 
 .banner__header {
   margin-top: 0;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
   color: $white-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 /* Кнопка баннера */
 .banner__button {
