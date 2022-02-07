@@ -1055,6 +1055,7 @@ p {
 }
 
 .works__text {
+  font-weight: bold;
   color: #ffffff;
 }
 
@@ -1337,6 +1338,10 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer__text--white {
+  color: #ffffff;
+}
+
 .footer__item {
   margin-bottom: 9px;
 }
@@ -1347,7 +1352,7 @@ p {
 
 .footer__text:hover,
 .footer__text:focus {
-  color: #ffffff;
+  color: #2196f3;
 }
 
 .footer-center_box {

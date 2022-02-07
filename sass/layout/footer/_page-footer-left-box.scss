@@ -31,7 +31,9 @@
   cursor: pointer;
   transition: color $t250 $cubic;
 }
-
+.footer__text--white {
+  color: $white-color;
+}
 .footer__item {
   margin-bottom: 9px;
 }
@@ -42,5 +44,5 @@
 
 .footer__text:hover,
 .footer__text:focus {
-  color: $white-color;
+  color: $brand-color;
 }
