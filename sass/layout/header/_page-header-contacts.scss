@@ -77,15 +77,15 @@
   &:focus {
     color: $brand-color;
     fill: $brand-color;
-
-    @media screen and (max-width: $max-mobile) {
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.176;
-    }
   }
 }
-
+.contacts__link--size {
+  @media screen and (max-width: $max-mobile) {
+    font-size: 34px;
+    line-height: 1.176;
+    color: $brand-color;
+  }
+}
 .contacts__svg {
   display: none;
   @media screen and (min-width: $min-tablet) {
